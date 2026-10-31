@@ -110,6 +110,7 @@ export default function ProblemLibrary({ onSelectProblem, onDuelProblem }) {
               <div 
                 key={prob.id}
                 className="glass-panel"
+                data-problem-card
                 style={{
                   padding: '1.25rem 1.5rem',
                   display: 'flex',
@@ -121,7 +122,7 @@ export default function ProblemLibrary({ onSelectProblem, onDuelProblem }) {
                 }}
               >
                 {/* Problem Info */}
-                <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem', minWidth: '280px', flex: 1 }}>
+                <div className="problem-card-info" style={{ display: 'flex', alignItems: 'center', gap: '1.25rem', minWidth: '280px', flex: 1 }}>
                   <div style={{
                     width: '42px',
                     height: '42px',
@@ -164,7 +165,7 @@ export default function ProblemLibrary({ onSelectProblem, onDuelProblem }) {
                 </div>
 
                 {/* Actions */}
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                <div className="problem-card-actions" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
                   <button 
                     onClick={() => onSelectProblem(prob.id)}
                     className="secondary-btn"

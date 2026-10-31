@@ -24,7 +24,7 @@ export default function Leaderboard() {
   return (
     <div className="leaderboard-page" style={{ maxWidth: '1080px', margin: '2rem auto', padding: '0 1.5rem' }}>
       <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
-        <div style={{
+        <div className="leaderboard-grid leaderboard-grid-header" style={{
           display: 'inline-flex',
           alignItems: 'center',
           gap: '0.5rem',
@@ -86,6 +86,7 @@ export default function Leaderboard() {
               return (
                 <div 
                   key={p.username}
+                  className="leaderboard-grid leaderboard-grid-row"
                   style={{
                     display: 'grid',
                     gridTemplateColumns: '70px 1fr 120px 100px 110px 100px',

@@ -106,12 +106,12 @@ export default function CodeWorkspace({ problemId, onBack, onDuelThis }) {
         flexWrap: 'wrap'
       }}>
         {/* Left: back & problem title */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+        <div className="workspace-title-group" style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
           <button onClick={onBack} className="secondary-btn" style={{ padding: '0.45rem 0.75rem', fontSize: '0.85rem' }}>
             <ArrowLeft size={16} />
             <span>Library</span>
           </button>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
+          <div className="workspace-title" style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
             <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '1.1rem', color: '#17353c' }}>
               {problem.title}
             </span>
@@ -120,7 +120,7 @@ export default function CodeWorkspace({ problemId, onBack, onDuelThis }) {
         </div>
 
         {/* Center: Language selector */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
+        <div className="workspace-language" style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', background: 'var(--bg-surface)', padding: '0.2rem 0.5rem', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border-subtle)' }}>
             <FileCode2 size={16} color="var(--accent-cyan)" />
             <select
@@ -150,7 +150,7 @@ export default function CodeWorkspace({ problemId, onBack, onDuelThis }) {
         </div>
 
         {/* Right: Submit & Duel buttons */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
+        <div className="workspace-actions" style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
           <button 
             onClick={() => onDuelThis(problem.id)}
             className="battle-btn"

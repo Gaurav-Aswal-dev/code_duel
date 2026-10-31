@@ -3,7 +3,7 @@ import { Swords, Code2, Trophy, Flame, User, LogOut, Sparkles } from 'lucide-rea
 
 export default function Navbar({ activeTab, setActiveTab, user, onOpenAuth, onLogout }) {
   return (
-    <header style={{
+    <header className="site-header" style={{
       position: 'sticky',
       top: 0,
       zIndex: 100,
@@ -11,7 +11,7 @@ export default function Navbar({ activeTab, setActiveTab, user, onOpenAuth, onLo
       borderBottom: '1px solid #dcdad2',
       padding: '0.75rem 2rem'
     }}>
-      <div className="site-brand-name" style={{
+      <div className="site-header-inner site-brand-name" style={{
         maxWidth: '1440px',
         margin: '0 auto',
         display: 'flex',
@@ -21,6 +21,7 @@ export default function Navbar({ activeTab, setActiveTab, user, onOpenAuth, onLo
       }}>
         {/* Brand */}
         <div 
+          className="site-brand"
           onClick={() => setActiveTab('lobby')}
           style={{
             display: 'flex',
@@ -102,7 +103,7 @@ export default function Navbar({ activeTab, setActiveTab, user, onOpenAuth, onLo
         </nav>
 
         {/* User state / Auth */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+        <div className="site-account" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
           {user ? (
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
               <div style={{
