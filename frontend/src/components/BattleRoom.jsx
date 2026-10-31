@@ -222,7 +222,7 @@ export default function BattleRoom({ roomCode, user, onLeave }) {
         gap: '1rem'
       }}>
         {/* Left: Leave & Room code */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.85rem' }}>
+        <div className="battle-room-details" style={{ display: 'flex', alignItems: 'center', gap: '0.85rem' }}>
           <button onClick={onLeave} className="secondary-btn" style={{ padding: '0.4rem 0.75rem', fontSize: '0.82rem' }}>
             <ArrowLeft size={16} />
             <span>Leave</span>
@@ -279,9 +279,9 @@ export default function BattleRoom({ roomCode, user, onLeave }) {
         </div>
 
         {/* Center: 1v1 Matchup Head-to-Head + Phase Timer */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
+        <div className="battle-matchup" style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
           {/* Player 1 (You) */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem', textAlign: 'right' }}>
+          <div className="battle-player battle-player-self" style={{ display: 'flex', alignItems: 'center', gap: '0.65rem', textAlign: 'right' }}>
             <div>
               <div style={{ fontSize: '0.85rem', fontWeight: 700, color: '#38bdf8' }}>
                 {user?.username || 'You'} (You)
@@ -308,7 +308,7 @@ export default function BattleRoom({ roomCode, user, onLeave }) {
           </div>
 
           {/* VS & Timer with Thinking vs Coding indicator */}
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          <div className="battle-timer" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
             <div style={{
               display: 'flex',
               alignItems: 'center',
@@ -333,7 +333,7 @@ export default function BattleRoom({ roomCode, user, onLeave }) {
           </div>
 
           {/* Player 2 (Opponent) */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
+          <div className="battle-player battle-player-opponent" style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
             <div style={{
               width: '32px',
               height: '32px',
@@ -348,7 +348,7 @@ export default function BattleRoom({ roomCode, user, onLeave }) {
             }}>
               {oppName ? oppName.charAt(0).toUpperCase() : '?'}
             </div>
-            <div>
+            <div className="battle-submit">
               <div style={{ fontSize: '0.85rem', fontWeight: 700, color: oppName ? '#8c5f57' : 'var(--accent-amber)' }}>
                 {oppName || 'Waiting for Challenger...'}
               </div>

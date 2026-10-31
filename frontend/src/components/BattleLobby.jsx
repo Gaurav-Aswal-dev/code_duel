@@ -367,7 +367,7 @@ export default function BattleLobby({ user, onEnterBattle, onOpenAuth, onAuthSuc
       </div>
 
       {/* Join By Room Code Box & Active Rooms List */}
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '2rem', alignItems: 'start' }}>
+      <div className="lobby-room-layout" style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '2rem', alignItems: 'start' }}>
         <div className="glass-panel" style={{ padding: '1.75rem' }}>
           <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.2rem', fontWeight: 700, marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
             <LogIn size={18} color="var(--accent-cyan)" />

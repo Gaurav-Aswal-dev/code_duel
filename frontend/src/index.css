@@ -755,3 +755,438 @@ body {
     transition-duration: 0.01ms;
   }
 }
+
+@media (max-width: 760px) {
+  body,
+  #root {
+    width: 100%;
+    min-width: 320px;
+  }
+
+  .site-header {
+    padding: 0.65rem 0.8rem !important;
+  }
+
+  .site-header-inner {
+    flex-wrap: wrap;
+    gap: 0.55rem;
+  }
+
+  .site-brand {
+    gap: 0.5rem !important;
+  }
+
+  .site-brand > div:first-child {
+    width: 34px !important;
+    height: 34px !important;
+  }
+
+  .site-brand > div:last-child > div:first-child {
+    font-size: 1.15rem !important;
+  }
+
+  .site-nav {
+    order: 3;
+    flex: 1 0 100%;
+    justify-content: space-between;
+    gap: 0.15rem !important;
+  }
+
+  .site-nav .secondary-btn {
+    flex: 1 1 0;
+    justify-content: center;
+    gap: 0.25rem;
+    padding: 0.4rem 0.15rem !important;
+    font-size: 0.68rem;
+    white-space: nowrap;
+  }
+
+  .site-nav .secondary-btn svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .site-account {
+    margin-left: auto;
+  }
+
+  .site-account > div > div:first-child {
+    gap: 0.35rem !important;
+  }
+
+  .site-account > div > div:first-child > div:last-child {
+    max-width: 105px;
+    overflow: hidden;
+  }
+
+  .site-account > div > div:first-child span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .site-footer {
+    position: static !important;
+    padding: 0.65rem 0.8rem !important;
+  }
+
+  .site-footer-inner,
+  .site-footer-stats,
+  .site-footer-meta {
+    justify-content: center;
+    gap: 0.5rem 0.75rem !important;
+    font-size: 0.68rem !important;
+    text-align: center;
+  }
+
+  .site-footer-inner {
+    flex-direction: column;
+  }
+
+  .site-footer-stats {
+    width: 100%;
+  }
+
+  .site-footer-meta {
+    flex-wrap: wrap;
+  }
+
+  .lobby-page,
+  .problem-library-page,
+  .leaderboard-page {
+    width: 100%;
+    margin: 1.25rem auto !important;
+    padding: 0 0.85rem !important;
+  }
+
+  .lobby-page .lobby-welcome {
+    padding: 0.85rem !important;
+    align-items: flex-start !important;
+  }
+
+  .lobby-welcome > div:first-child {
+    align-items: flex-start !important;
+  }
+
+  .lobby-welcome > div:last-child {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .lobby-welcome > div:last-child button {
+    flex: 1 1 140px;
+    justify-content: center;
+  }
+
+  .lobby-hero {
+    padding: 1.35rem 1rem !important;
+    margin-bottom: 1.25rem !important;
+  }
+
+  .lobby-page .lobby-hero h1 {
+    font-size: clamp(1.7rem, 8vw, 2.15rem) !important;
+  }
+
+  .lobby-page .lobby-hero p {
+    font-size: 0.92rem !important;
+  }
+
+  .lobby-hero > div > div:last-child {
+    gap: 0.75rem !important;
+  }
+
+  .lobby-hero > div > div:last-child > div {
+    width: 100%;
+  }
+
+  .lobby-hero > div > div:last-child button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .lobby-room-layout {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 1rem !important;
+  }
+
+  .lobby-room-layout > .glass-panel {
+    padding: 1rem !important;
+    min-width: 0;
+  }
+
+  .problem-library-page > div:first-child {
+    align-items: stretch !important;
+    margin-bottom: 1.25rem !important;
+  }
+
+  .problem-library-page h1,
+  .leaderboard-page > div:first-child h1 {
+    font-size: clamp(1.8rem, 8vw, 2.3rem) !important;
+  }
+
+  .problem-library-page > div:first-child > div:last-child {
+    width: 100%;
+    align-items: stretch !important;
+  }
+
+  .problem-library-page > div:first-child > div:last-child > div:first-child {
+    width: 100%;
+    min-width: 0 !important;
+  }
+
+  .problem-library-page > div:first-child > div:last-child > div:last-child {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .problem-library-page > div:first-child > div:last-child > div:last-child button {
+    flex: 1 1 auto;
+    padding-right: 0.35rem !important;
+    padding-left: 0.35rem !important;
+    font-size: 0.68rem !important;
+  }
+
+  [data-problem-card] {
+    padding: 0.9rem !important;
+    align-items: stretch !important;
+    gap: 0.85rem !important;
+  }
+
+  .problem-card-info {
+    min-width: 0 !important;
+    align-items: flex-start !important;
+    gap: 0.7rem !important;
+  }
+
+  .problem-card-info > div:last-child {
+    min-width: 0;
+  }
+
+  .problem-card-info > div:last-child > div:first-child {
+    flex-wrap: wrap;
+    gap: 0.4rem !important;
+  }
+
+  .problem-card-info > div:last-child > div:first-child > span:first-child {
+    overflow-wrap: anywhere;
+    font-size: 1rem !important;
+  }
+
+  .problem-card-info > div:last-child > div:last-child {
+    flex-wrap: wrap;
+    gap: 0.45rem 0.8rem !important;
+  }
+
+  .problem-card-actions {
+    width: 100%;
+    gap: 0.5rem !important;
+  }
+
+  .problem-card-actions button {
+    flex: 1 1 0;
+    justify-content: center;
+    padding: 0.55rem 0.4rem !important;
+    font-size: 0.73rem !important;
+  }
+
+  .leaderboard-page > div:first-child {
+    margin-bottom: 1.25rem !important;
+  }
+
+  .leaderboard-page > div:first-child p {
+    font-size: 0.85rem !important;
+  }
+
+  .leaderboard-grid-header,
+  .leaderboard-grid-row {
+    grid-template-columns: 34px minmax(0, 1fr) 58px 54px !important;
+    column-gap: 0.25rem;
+    padding-right: 0.55rem !important;
+    padding-left: 0.55rem !important;
+  }
+
+  .leaderboard-grid-header {
+    font-size: 0.6rem !important;
+  }
+
+  .leaderboard-grid-header > :nth-child(4),
+  .leaderboard-grid-header > :nth-child(5),
+  .leaderboard-grid-row > :nth-child(4),
+  .leaderboard-grid-row > :nth-child(5) {
+    display: none !important;
+  }
+
+  .leaderboard-grid-row {
+    padding-top: 0.8rem !important;
+    padding-bottom: 0.8rem !important;
+  }
+
+  .leaderboard-grid-row > :nth-child(2) {
+    min-width: 0;
+    gap: 0.5rem !important;
+  }
+
+  .leaderboard-grid-row > :nth-child(2) > div:last-child {
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .leaderboard-grid-row > :nth-child(2) > div:last-child > div {
+    overflow-wrap: anywhere;
+  }
+
+  .coding-shell {
+    height: auto !important;
+    min-height: 0;
+  }
+
+  .workspace-topbar,
+  .battle-topbar {
+    align-items: stretch !important;
+    gap: 0.65rem !important;
+    padding: 0.65rem 0.75rem !important;
+  }
+
+  .workspace-topbar {
+    flex-direction: column;
+  }
+
+  .workspace-title-group,
+  .workspace-language,
+  .workspace-actions {
+    width: 100%;
+    justify-content: space-between;
+    gap: 0.45rem !important;
+    min-width: 0;
+  }
+
+  .workspace-title-group {
+    justify-content: flex-start;
+  }
+
+  .workspace-title {
+    min-width: 0;
+    flex-wrap: wrap;
+    gap: 0.35rem !important;
+  }
+
+  .workspace-title > span:first-child {
+    max-width: 55vw;
+    overflow-wrap: anywhere;
+    font-size: 0.92rem !important;
+  }
+
+  .workspace-actions button {
+    flex: 1 1 0;
+    justify-content: center;
+    padding-right: 0.5rem !important;
+    padding-left: 0.5rem !important;
+    font-size: 0.75rem !important;
+  }
+
+  .battle-topbar {
+    flex-direction: column;
+  }
+
+  .battle-room-details {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 0.4rem !important;
+  }
+
+  .battle-matchup {
+    width: 100%;
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    gap: 0.3rem !important;
+  }
+
+  .battle-player {
+    min-width: 0;
+    gap: 0.3rem !important;
+  }
+
+  .battle-player > div:last-child {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .battle-player-self {
+    text-align: left !important;
+  }
+
+  .battle-player-self > div:first-child > div:last-child {
+    justify-content: flex-start !important;
+  }
+
+  .battle-player-opponent {
+    justify-content: flex-end;
+  }
+
+  .battle-timer > div:last-child {
+    white-space: nowrap;
+    font-size: 0.53rem !important;
+  }
+
+  .battle-submit,
+  .battle-submit button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .battle-phase-banner {
+    align-items: flex-start !important;
+    flex-direction: column;
+    gap: 0.45rem;
+    padding: 0.5rem 0.75rem !important;
+  }
+
+  .problem-stage {
+    flex: none;
+    min-height: 0;
+  }
+
+  .problem-editor {
+    height: auto;
+  }
+
+  .problem-editor > div[style*="min-height"] {
+    min-height: 320px !important;
+  }
+
+  .auth-overlay {
+    align-items: flex-start !important;
+    overflow-y: auto;
+    padding: 0.75rem !important;
+  }
+
+  .auth-dialog {
+    margin: auto 0;
+    max-height: calc(100dvh - 1.5rem);
+    overflow-y: auto;
+    padding: 1.25rem !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .site-brand > div:last-child > div:last-child {
+    font-size: 0.58rem !important;
+  }
+
+  .site-account > div > div:first-child {
+    padding: 0.2rem !important;
+  }
+
+  .site-account > div > div:first-child > div:first-child {
+    display: none !important;
+  }
+
+  .problem-card-actions button span {
+    white-space: normal;
+    text-align: center;
+  }
+
+  .battle-room-details > span:last-child {
+    font-size: 0.58rem !important;
+  }
+}

@@ -26,7 +26,7 @@ export default function OnlinePresenceBar() {
   };
 
   return (
-    <footer style={{
+    <footer className="site-footer" style={{
       position: 'sticky',
       bottom: 0,
       zIndex: 90,
@@ -34,7 +34,7 @@ export default function OnlinePresenceBar() {
       borderTop: '1px solid var(--border-subtle)',
       padding: '0.55rem 2rem'
     }}>
-      <div style={{
+      <div className="site-footer-inner" style={{
         maxWidth: '1440px',
         margin: '0 auto',
         display: 'flex',
@@ -45,7 +45,7 @@ export default function OnlinePresenceBar() {
         fontSize: '0.8rem'
       }}>
         {/* Left: Online Status Indicator */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem', flexWrap: 'wrap' }}>
+        <div className="site-footer-stats" style={{ display: 'flex', alignItems: 'center', gap: '1.25rem', flexWrap: 'wrap' }}>
           <div style={{
             display: 'inline-flex',
             alignItems: 'center',
@@ -80,7 +80,7 @@ export default function OnlinePresenceBar() {
         </div>
 
         {/* Right: Server Status */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', color: 'var(--text-dim)', fontSize: '0.75rem' }}>
+        <div className="site-footer-meta" style={{ display: 'flex', alignItems: 'center', gap: '1rem', color: 'var(--text-dim)', fontSize: '0.75rem' }}>
           <span>Code Duel Global Arena</span>
           <span style={{ color: 'var(--border-subtle)' }}>•</span>
           <span style={{ display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
